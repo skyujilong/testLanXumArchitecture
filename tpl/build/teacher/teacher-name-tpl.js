@@ -1,0 +1,2 @@
+/*TMODJS:{"version":6,"md5":"df08a9f89198325558acb19bbadd8f67"}*/
+define(["../template",""],function(a){return a("teacher/teacher-name-tpl",function(a){"use strict";var b=this,c=(b.$helpers,b.$each),d=(a.$value,a.$index,b.$escape),e="";return c(a,function(a){e+=" <li>",e+=d(a.name),e+="</li> "}),new String(e)})});

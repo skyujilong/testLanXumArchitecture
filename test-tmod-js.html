@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head lang="zh">
+    <meta charset="UTF-8">
+    <title>测试tmod</title>
+    <script src="js/require.js" data-main="main"></script>
+    <script>
+        require.config({
+            baseUrl:'js/testTmod',
+            paths:{
+                'jquery':'../jquery-1.9.1.min',
+                'template':'../../tpl/build/template',
+                'domReady':'../domReady',
+                'template-debug':'../template-debug'
+            }
+        });
+    </script>
+</head>
+<body>
+    <div id="student-info"></div>
+    <ul id="teacher-name-list"></ul>
+</body>
+</html>

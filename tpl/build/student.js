@@ -1,0 +1,2 @@
+/*TMODJS:{"version":1,"md5":"a1f1d8517bce6e5b998e9445bf4c9fec"}*/
+define(["./template",""],function(a){return a("student",'<!DOCTYPE html> <html> <head lang="en"> <meta charset="UTF-8"> <title></title> </head> <body> </body> </html>')});
