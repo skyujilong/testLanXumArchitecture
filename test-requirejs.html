@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head lang="zh">
+    <meta charset="UTF-8">
+    <title>测试requirejs</title>
+    <script src="js/require.js" data-main="test-requirejs.js"></script>
+    <script src="js/require-config.js"></script>
+</head>
+<body>
+    <div>
+        <ul id="list-info">
+
+        </ul>
+    </div>
+<script id="list-info-template" type="text/html">
+    {{each}}
+            <li><a href="{{$value.url}}" title="{{$value.title}}">{{$value.title}}</a></li>
+    {{/each}}
+</script>
+</body>
+</html>
