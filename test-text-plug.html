@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head lang="zh">
+    <meta charset="UTF-8">
+    <title>测试通过requirejs的text插件进行加载模板</title>
+    <script src="js/require.js" data-main="main"></script>
+    <script>
+        require.config({
+            baseUrl:'js/testText',
+            paths:{
+                'jquery':'../jquery-1.9.1.min',
+                'template':'../template',
+                'domReady':'../domReady',
+                'text':'../text'
+            }
+        });
+    </script>
+</head>
+<body>
+    <div id="student-info"></div>
+</body>
+</html>
