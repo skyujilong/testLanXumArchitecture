@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head lang="zh">
+    <meta charset="UTF-8">
+    <title>测试backbone marionette</title>
+    <style>
+        .row{
+            margin:15px;
+        }
+    </style>
+</head>
+<body>
+    <div class="wrapper">
+        <div class="edit"></div>
+        <ul class="list"></ul>
+        <div class="total"></div>
+    </div>
+
+<script id="editTpl" type="text/html">
+    <div class="row">
+        <label>名字：</label><input type="text" name="name" value="{{name}}">
+    </div>
+    <div class="row">
+        <label>性别：</label><input type="text" name="sex" value="{{sex}}">
+    </div>
+    <div class="row">
+        <label>年龄：</label><input type="text" name="age" value="{{age}}">
+    </div>
+    <div class="row">
+        <a id="save-btn" href="javascript:void(0);">确定</a>
+    </div>
+</script>
+<script id="userTpl" type="text/html">
+        <li>
+            <span>{{index}}</span><span>{{name}}</span><span>{{sex}}</span><span>{{age}}</span><span><a class="edit-btn" href="javascript:void(0);">编辑</a><a class="save-btn" href="javascript:void(0);">删除</a></span>
+        </li>
+</script>
+<script id="totalTpl" type="text/html">
+    <span>{{total}}</span>
+</script>
+    <script src="js/jquery-1.9.1.min.js"></script>
+    <script src="js/backbone/underscore.js"></script>
+    <script src="js/backbone/backbone.js"></script>
+    <script src="js/backbone/backbone.localStorage.js"></script>
+    <script src="js/backbone/backbone.marionette.js"></script>
+    <script src="js/template-debug.js"></script>
+    <script src="js/testMarionette/test.js"></script>
+</body>
+</html>
